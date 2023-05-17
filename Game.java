@@ -36,7 +36,7 @@ public class Game{
     }
 
     public ArrayList<Card> sortHand(ArrayList<Card> hand){
-        for (int rank = 0; rank < hand.size(); rank++) {
+        for (int i = 0; i < hand.size(); i++) {
             
         }
     }
