@@ -2,15 +2,13 @@ import java.util.ArrayList;
 
 public class Game{
 
-    static ArrayList<Card> deck1 = new ArrayList<Card>();
+    private boolean active;
 
-    static ArrayList<Card> hand1 = new ArrayList<Card>();
+    private ArrayList<Card> allCards = new ArrayList<Card>();
 
-    static ArrayList<Card> deck2 = new ArrayList<Card>();
+    static Card[][] locations = new Card[3][4];
 
-    static ArrayList<Card> hand2 = new ArrayList<Card>();
 
-    
 
     //player class. Hero system different player abilites.
 
@@ -19,7 +17,21 @@ public class Game{
 
 
     public Game(){
+
+        allCards.add(new Monster(1,1,"human","lowly soldier"));
+        allCards.add(new Monster(2,5,"giant turtle","it's s"));
+        allCards.add(new Monster(1,1,"human","lowly soldier"));
+        allCards.add(new Monster(1,1,"human","lowly soldier"));
+        allCards.add(new Monster(1,1,"human","lowly soldier"));
+        allCards.add(new Monster(1,1,"human","lowly soldier"));
+        allCards.add(new Monster(1,1,"human","lowly soldier"));
         
+
     }
+    
+
+    
+
+
 
 }

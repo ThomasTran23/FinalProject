@@ -17,7 +17,7 @@ public class Card{
         return this.name;
     }
 
-    public boolean trigger(){
+    public boolean trigger(Player target){
         return false;
     }
 

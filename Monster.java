@@ -1,35 +1,19 @@
 public class Monster extends Card {
     private int power;
-    private int toughness;
+    private boolean enemy;//if true, target other player, if false target self.
     private int baseP;
-    private int baseT;
 
-    public Monster(int power, int toughness, int cost, String name, String description) {
+
+    public Monster(int power, int cost, String name, String description,boolean enemy) {
         super(cost, name,description);
         this.baseP = power;
-        this.baseT = toughness;
+        this.enemy = enemy;
         this.power = power;
-        this.toughness = toughness;
+   
     }
 
     public int getPower() {
         return power;
-    }
-
-    public int toughness() {
-        return toughness;
-    }
-
-    public boolean takeDamage(int dmg) {
-        toughness -= dmg;
-        if (toughness <= 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public void restore() {
-        toughness = baseT;
     }
 
     public void buff(int amm) {
@@ -38,6 +22,10 @@ public class Monster extends Card {
 
     public void reset(){
         power = baseP;
+    }
+
+    public boolean getEnemy(){
+        return enemy;
     }
 
 }
