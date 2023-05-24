@@ -72,7 +72,7 @@ public class Board extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(WIDTH, HEIGHT));
         Container contentPane = this.getContentPane();
-        contentPane.setLayout(new GridBagLayout(6,5));
+        contentPane.setLayout(new GridBagLayout());
         // Color bColor = Color.green.darker();
         // contentPane.setBackground(bColor);
 
