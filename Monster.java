@@ -28,4 +28,12 @@ public class Monster extends Card {
         return enemy;
     }
 
+    public boolean startTurn(){
+        return false;
+    }
+
+    public boolean endTurn(){
+        return false;
+    }
+
 }
