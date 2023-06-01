@@ -3,7 +3,7 @@ public class Card{
     private String name;
     private String description;
 
-    public Card(int cost, String name, String description, int[] ... effect){
+    public Card(int cost, String name, String description){
         this.cost = cost;
         this.name = name;
         this.description = description;

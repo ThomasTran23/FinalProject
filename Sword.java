@@ -1,8 +1,8 @@
-public class sword extends Monster{
+public class Sword extends Monster{
 
 
-    public sword(){
-        super(10,5,"sword","can only be played in a location with a monster to wield it",false);
+    public Sword(){
+        super(10,5,"Sword","can only be played in a location with a monster to wield it",false);
 
         //etb here
     }
